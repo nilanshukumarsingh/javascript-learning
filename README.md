@@ -383,9 +383,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📫 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
-
-Project Link: [https://github.com/yourusername/javascript-learning](https://github.com/yourusername/javascript-learning)
+Project Link: [https://github.com/nilanshukumarsingh/learning-javascript](https://github.com/nilanshukumarsingh/learning-javascript)
 
 ---
 
