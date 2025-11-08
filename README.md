@@ -16,10 +16,11 @@ This repository contains a comprehensive collection of JavaScript concepts, exam
 10. [Fetch API and Async/Await](#fetch-api-and-async-await)
 11. [Web Browser APIs](#web-browser-apis)
 12. [Object-Oriented Programming](#object-oriented-programming)
-13. [Modules and Tooling](#modules-and-tooling)
-14. [Iterators, Generators, and Data Structures](#iterators-generators-and-data-structures)
-15. [Unit Testing and Algorithms](#unit-testing-and-algorithms)
-16. [Node.js Core Modules](#nodejs-core-modules)
+13. [Modern Classes and OOP (ES2022+)](#modern-classes-and-oop-es2022)
+14. [Modules and Tooling](#modules-and-tooling)
+15. [Iterators, Generators, and Data Structures](#iterators-generators-and-data-structures)
+16. [Unit Testing and Algorithms](#unit-testing-and-algorithms)
+17. [Node.js Core Modules](#nodejs-core-modules)
 
 ## 🎯 Key Features
 
@@ -177,12 +178,98 @@ const calculator = {
 
 ## Object-Oriented Programming
 
+### Basic OOP Concepts
+
 - Constructor functions
 - Prototypes and inheritance
-- ES6 Classes
-- Private properties
-- Static methods
 - Property flags and descriptors
+
+## Modern Classes and OOP (ES2022+)
+
+### Class Basics and Inheritance
+
+```javascript
+// Basic Class
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    return `Hello, I'm ${this.name}`;
+  }
+}
+
+// Inheritance
+class Employee extends Person {
+  constructor(name, age, role) {
+    super(name, age);
+    this.role = role;
+  }
+}
+```
+
+### Private Properties and Methods
+
+```javascript
+class BankAccount {
+  // Private field (ES2022+)
+  #balance = 0;
+
+  // Private method
+  #validateAmount(amount) {
+    return amount > 0;
+  }
+
+  deposit(amount) {
+    if (this.#validateAmount(amount)) {
+      this.#balance += amount;
+      return true;
+    }
+    return false;
+  }
+}
+```
+
+### Getters, Setters, and Static Members
+
+```javascript
+class Product {
+  static #tax = 0.1;
+  #price;
+
+  constructor(price) {
+    this.#price = price;
+  }
+
+  // Getter
+  get finalPrice() {
+    return this.#price * (1 + Product.#tax);
+  }
+
+  // Setter
+  set price(newPrice) {
+    if (newPrice >= 0) {
+      this.#price = newPrice;
+    }
+  }
+
+  // Static method
+  static calculateTax(price) {
+    return price * Product.#tax;
+  }
+}
+```
+
+### Advanced Features
+
+- Class fields (public and private)
+- Static members and methods
+- Method binding and 'this' context
+- Property descriptors and flags
+- Object freezing and sealing
+- Define Property API
 
 ## Modules and Tooling
 
