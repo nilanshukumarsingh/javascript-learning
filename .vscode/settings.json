@@ -1,0 +1,19 @@
+{
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "*.jsx": "javascriptreact",
+    "ostream": "cpp",
+    "cmath": "cpp",
+    "array": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "cstdlib": "cpp",
+    "bitset": "cpp",
+    "algorithm": "cpp",
+    "format": "cpp",
+    "new": "cpp",
+    "iostream": "cpp"
+  }
+}

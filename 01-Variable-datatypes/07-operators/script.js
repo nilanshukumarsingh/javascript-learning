@@ -1,0 +1,54 @@
+// ^ 1) Arithmetic Operators
+let x; 
+x = 5 + 5;
+x = 5 - 5;
+x = 5 * 5;
+x = 5 / 5;
+x = 5 % 5;
+
+// ^ Concatenation
+x = 'Hello' + 'World';
+
+// ^ Exponent
+x = 2**3;
+
+// ^ Increment
+x = 1;
+x = x + 1;
+x++;
+
+// ^ Decrement
+x = x - 1;
+x--;
+
+
+// ^ 2) Assignment Operatos
+x = 10;
+x += 5;
+x -= 5;
+x *= 5;
+x /= 5;
+x %= 5;
+x **= 5;
+
+
+// ^ 3) Comparison Operators
+x = 2 == 2; // & ==   it only check the value not the type
+x = 2 == 4; // false
+
+x = 2 === 2; // & === it check the value and the type both
+x = 2 === '2'; // false
+
+x = 2 != 2; // false
+x = 2 != '2'; // false
+
+x = 2 !== 2; // false
+x = 2 !== '2'; // true
+
+x = 10 > 5;
+x = 10 < 5;
+x = 10 >= 5;
+x = 10 <= 5;
+
+
+console.log(x);
